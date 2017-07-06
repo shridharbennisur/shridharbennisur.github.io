@@ -1,0 +1,14 @@
+{
+  "name": "myproject",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Shridhar Bennisur <shridharmbennisur77@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/shridharbennisur/first_project",
+  "private": true,
+  "dependencies": {
+    "angular-ui-calendar": "^1.0.2"
+  }
+}

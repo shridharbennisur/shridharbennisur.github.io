@@ -1,0 +1,31 @@
+{{result}}
+
+<h1 style="color:grey"> Latest News From {{news.data.source}}</h1>
+ 
+<div class="container" >
+     <div class="well well-sm">
+     <div id="products" class="row list-group">
+    <loading></loading>
+         
+        <div class="item  col-xs-4 col-lg-4" ng-repeat="article in news.data.articles">
+            <div class="thumbnail">
+                <img class="group list-group-image" ng-src="{{article.urlToImage}}" alt="{{article.title}}" />
+                <div class="caption">
+                    
+                    <h5 class="group inner list-group-item-heading">
+                    <b>     Title: {{article.title}}</b></h5>
+
+                    <h6 class="group inner list-group-item-heading">
+                    <b style="background-color:bisque">     Author: {{article.author}}</b></h6>
+
+                    <p class="group inner list-group-item-text">
+                        {{article.description}} </p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <span style="color:blueviolet">publishedAt</span>:{{article.publishedAt | date}}
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" ng-href="{{article.url}}">More Details..</a>
+                        </div>
+                    </div>
+                </div></div></div></div></div></div>
